@@ -5,6 +5,7 @@ import Ellipse from "../../../public/IMAGE/Ellipse 1.png";
 import Star from "../../../public/SVG/Star.svg";
 import Stats from "../Frontend/Stats";
 import Footer from "../Frontend/Footer";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "HOME", href: "/", current: false },
@@ -14,6 +15,11 @@ const navigation = [
 ];
 
 function Servicespage() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "/contactus";
+    navigate(path);
+  };
   return (
     <div className="Servicespage-section">
       <div className="flex bg-gray-100">
@@ -48,7 +54,10 @@ function Servicespage() {
                 className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[50rem]"
                 style={{ backgroundImage: `url(${Ellipse})` }}
               >
-                <button className="btn text-2xl relative flex items-center justify-center left-10 bottom-5">
+                <button
+                  className="btn text-2xl relative flex items-center justify-center left-10 bottom-5"
+                  onClick={routeChange}
+                >
                   Let’s Talk
                 </button>
               </div>

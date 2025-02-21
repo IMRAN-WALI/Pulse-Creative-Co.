@@ -5,6 +5,7 @@ import Logo from "../../../public/IMAGE/main-logo.png";
 import Ellipse from "../../../public/IMAGE/Ellipse 1.png";
 import Stats from "../Frontend/Stats";
 import Footer from "../Frontend/Footer";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "HOME", href: "/", current: false },
@@ -14,6 +15,11 @@ const navigation = [
 ];
 
 function Casestudiespage() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "/contactus";
+    navigate(path);
+  };
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     "/public/IMAGE/carousal1.png",
@@ -61,7 +67,10 @@ function Casestudiespage() {
                 className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[50rem]"
                 style={{ backgroundImage: `url(${Ellipse})` }}
               >
-                <button className="btn text-2xl relative flex items-center justify-center left-10 bottom-5">
+                <button
+                  className="btn text-2xl relative flex items-center justify-center left-10 bottom-5"
+                  onClick={routeChange}
+                >
                   Let’s Talk
                 </button>
               </div>

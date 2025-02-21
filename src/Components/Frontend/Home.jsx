@@ -8,6 +8,7 @@ import Logo from "../../../public/IMAGE/main-logo.png";
 import img from "../../../public/IMAGE/creative.png";
 import Ellipse from "../../../public/IMAGE/Ellipse 1.png";
 import Line from "../../../public/IMAGE/underline.png";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "HOME", href: "/", current: true },
@@ -17,6 +18,11 @@ const navigation = [
 ];
 
 function Home() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "/contactus";
+    navigate(path);
+  };
   return (
     <div style={{ backgroundColor: "#F0F2F4" }}>
       <div className="flex bg-gray-100 h-screen">
@@ -52,18 +58,21 @@ function Home() {
                 className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[50rem]"
                 style={{ backgroundImage: `url(${Ellipse})` }}
               >
-                <button className="btn text-2xl relative flex items-center justify-center left-10 bottom-5">
+                <button
+                  className="btn text-2xl relative flex items-center justify-center left-10 bottom-5"
+                  onClick={routeChange}
+                >
                   Let’s Talk
                 </button>
               </div>
             </div>
           </div>
 
-          <div className=" container text-[150px]">
-            <h1 className="text-strat m-10 design-class">Design</h1>
+          <div className=" container">
+            <h1 className="design-class text-start text-[60px] md:text-[150px] m-10 ">Design</h1>
             <div className="flex justify-between items-center">
-              <span className="text-gray-400 design-class ml-10">&</span>
-              <h1 className="design-class">Technology</h1>
+              <span className="text-gray-400 md:text-[150px] sm:text-[40px] design-class ml-10">&</span>
+              <h1 className="design-class md:text-[150px] sm:text-[40px]">Technology</h1>
             </div>
           </div>
           <h1 className="text-[80px] text-center m-5 relative">
