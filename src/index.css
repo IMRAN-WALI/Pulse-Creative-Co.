@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  font-style: normal;
+  font-weight: 500; /* Adjust weight based on actual font */
+  src: url("./FONTS/ClashGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Light";
+  src: url("../FONTS/ClashGrotesk-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.design-class {
+  font-family: "ClashGrotesk-Bold", sans-serif;
+}
+
+.paragraph,
+.btn {
+  font-family: "ClashGrotesk-Light", sans-serif;
+}
+
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+/* .Pulse {
+  position: relative;
+  height: 62vh;
+  width: 26vw;
+  bottom: 100px;
+}
+
+.Pulse::before {
+  content: "";
+  position: absolute;
+}
+
+.Pulse::after {
+  content: "";
+  position: absolute;
+} */
