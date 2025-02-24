@@ -11,6 +11,7 @@ import DribbbleIcon from "../../../public/SVG/Arrow.svg";
 import SVG from "../../../public/SVG/Arrow.svg";
 import Stats from "../Frontend/Stats";
 import Footer from "../Frontend/Footer";
+import Calender from "../../../public/SVG/calendar.svg";
 
 const navigation = [
   {
@@ -365,7 +366,11 @@ function Contactus() {
                   <label className="paragraph">
                     When would you like to start?
                   </label>
-                  <input type="text" placeholder="Select Date..." />
+                  <span className="flex justify-between">
+                    {" "}
+                    <input type="text" placeholder="Select Date..." />
+                    <img className="mr-20" src={Calender} />
+                  </span>
                 </form>
               </div>
               <hr className="w-[57vw] border-0 h-[2px] bg-[#635D8B26] bg-opacity-15 mt-5" />

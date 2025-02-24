@@ -29,20 +29,3 @@
   box-sizing: border-box;
   /* overflow-x: hidden; */
 }
-
-/* .Pulse {
-  position: relative;
-  height: 62vh;
-  width: 26vw;
-  bottom: 100px;
-}
-
-.Pulse::before {
-  content: "";
-  position: absolute;
-}
-
-.Pulse::after {
-  content: "";
-  position: absolute;
-} */

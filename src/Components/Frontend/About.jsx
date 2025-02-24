@@ -74,13 +74,17 @@ function About() {
             <h1 className="design-class text-8xl">
               Creative Minds for Impactful Communications
             </h1>
-            <img className="mt-10" src={img} />
+            <img className="mt-10 relative z-2" src={img} />
           </div>
 
           <div className="container-grid grid grid-cols-12">
             <div
-              className="Pulse sm:col-span-6 flex bg-cover"
-              style={{ backgroundImage: `url(${Pulse})` }}
+              className="Pulse sm:col-span-6 flex bg-cover h-[59rem] w-[43vw] relative right-63 mt-[-28rem]"
+              style={{
+                backgroundImage: `url(${Pulse})`,
+                zIndex:1, // Place the image behind other content
+                position: "relative" // Use absolute positioning
+              }}
             ></div>
             <div className="sm:col-span-6">
               <div className="flex justify-end text-3xl text-end w-[70%] ml-52">
@@ -96,7 +100,7 @@ function About() {
 
           <div className="container-grid grid grid-cols-12">
             <div className="sm:col-span-6 flex">
-              <div className="mt-25">
+              <div className="mt-10">
                 <h1 className="design-class text-5xl ml-10">Our Story</h1>
                 <p className="paragraph text-4xl ml-10 w-[100%] mt-5">
                   Every great idea starts with a pulse, a spark of creativity
