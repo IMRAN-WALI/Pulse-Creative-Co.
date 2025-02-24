@@ -4,9 +4,9 @@ import React, { useState } from "react";
 function Casestudies() {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
-    "/public/IMAGE/carousal1.png",
-    "/public/IMAGE/carousal2.png",
-    "/public/IMAGE/carousal3.png"
+    "../../../public/IMAGE/carousal1.png",
+    "../../../public/IMAGE/carousal2.png",
+    "../../../public/IMAGE/carousal3.png"
   ];
 
   const handlePrev = () => {
