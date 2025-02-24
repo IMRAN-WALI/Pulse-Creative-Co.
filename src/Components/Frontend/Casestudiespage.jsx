@@ -64,7 +64,7 @@ function Casestudiespage() {
             </div>
             <div className="sm:col-span-6">
               <div
-                className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[57rem]"
+                className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[50rem]"
                 style={{ backgroundImage: `url(${Ellipse})` }}
               >
                 <button
