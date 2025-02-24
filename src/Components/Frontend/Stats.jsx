@@ -61,7 +61,7 @@ function Stats() {
               <br />
               IN MIND?
             </h1>
-            <p className="paragraph absolute text-3xl ml-[40rem] mt-40 w-[45%]">
+            <p className="paragraph absolute text-4xl ml-[43rem] mt-40 w-[49%]">
               we are always excited to collaborate on new and innovative
               projects. Whether you’re launching a startup, rebranding an
               existing business, or looking to enhance your digital presence,
@@ -80,7 +80,7 @@ function Stats() {
         </div>
 
         <div
-          className="h-25 flex items-center text-white justify-between overflow-hidden mt-12"
+          className="h-25 flex items-center text-white justify-between overflow-hidden mt-29"
           style={{
             background:
               "linear-gradient(279.04deg, #8E3CF7 -5.88%, #F0F2F4 134.65%)"
