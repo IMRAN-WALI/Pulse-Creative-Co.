@@ -3,8 +3,14 @@ import React from "react";
 import Eyeimg from "../../../public/IMAGE/Eye.png";
 import hand from "../../../public/IMAGE/Hand.png";
 import rgbImg from "../../../public/IMAGE/rgb.png";
+import { useNavigate } from "react-router-dom";
 
 function Services() {
+  let navigate = useNavigate();
+  const view = () => {
+    let path = "/services";
+    navigate(path);
+  };
   return (
     <div className="services-section">
       <div className="flex bg-gray-100 h-[70rem]">
@@ -76,7 +82,10 @@ function Services() {
                   alt="rgb Design"
                 />
                 <div className="cont text-end relative bottom-40 mr-25">
-                  <button className="paragraph bg-[#F0F2F4] rounded-full border-white h-30 w-30 text-[28px]  capitalize">
+                  <button
+                    className="paragraph bg-[#F0F2F4] rounded-full border-white h-25 w-25 text-[25px]  capitalize leading-5"
+                    onClick={view}
+                  >
                     view More
                   </button>
                 </div>

@@ -23,8 +23,9 @@ function Home() {
     let path = "/contactus";
     navigate(path);
   };
+  
   return (
-    <div style={{ backgroundColor: "#F0F2F4" }}>
+    <div style={{ backgroundColor: "#F0F2F4" }} className="w-full">
       <div className="flex bg-gray-100 h-screen">
         {/* Side Navbar */}
         <div className="w-64 shadow-lg" style={{ backgroundColor: "#F0F2F4" }}>
@@ -97,7 +98,7 @@ function Home() {
           </p>
 
           <div className="flex justify-end w-full">
-            <button className="paragraph bg-white rounded-full border-white h-30 w-30 text-[30px] mr-50">
+            <button className="paragraph bg-white rounded-full border-white h-25 w-25 text-[25px] mr-50 leading-7">
               view More
             </button>
           </div>

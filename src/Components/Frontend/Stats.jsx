@@ -1,13 +1,20 @@
-/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PenImg from "../../../public/IMAGE/pen.png";
+import { useNavigate } from "react-router-dom";
 
 function Stats() {
+  const navigate = useNavigate();
+
+  const routeChange = () => {
+    console.log("Button clicked!");
+    navigate("/contactus");
+  };
+
   return (
     <div
-      className="Stats-section flex h-[100vh]"
+      className="Stats-section flex h-screen"
       style={{ backgroundColor: "#F0F2F4" }}
     >
       {/* Stats Section */}
@@ -61,7 +68,7 @@ function Stats() {
               <br />
               IN MIND?
             </h1>
-            <p className="paragraph absolute text-4xl ml-[43rem] mt-40 w-[49%]">
+            <p className="paragraph absolute text-4xl ml-[40rem] mt-40 w-[49%]">
               we are always excited to collaborate on new and innovative
               projects. Whether you’re launching a startup, rebranding an
               existing business, or looking to enhance your digital presence,
@@ -69,18 +76,16 @@ function Stats() {
             </p>
           </div>
           <div className="col-span-2 flex items-center justify-end">
-            <button>
-            <img
-              className="w-[25vw] h-auto"
-              src={PenImg}
-              alt="Pen Illustration"
-            />
-            </button>
+            <button
+              className="w-70 h-70 bg-cover"
+              onClick={routeChange}
+              style={{ backgroundImage: `url(${PenImg})` }}
+            ></button>
           </div>
         </div>
 
         <div
-          className="h-25 flex items-center text-white justify-between overflow-hidden mt-29"
+          className="h-25 flex items-center text-white justify-between overflow-hidden mt-12"
           style={{
             background:
               "linear-gradient(279.04deg, #8E3CF7 -5.88%, #F0F2F4 134.65%)"

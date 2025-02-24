@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../public/IMAGE/main-logo.png";
 import Ellipse from "../../../public/IMAGE/Ellipse 1.png";
 import InstagramIcon from "../../../public/SVG/Arrow.svg";
@@ -25,6 +25,23 @@ const navigation = [
 ];
 
 function Contactus() {
+  const [selectedOption, setSelectedOption] = useState("");
+  const [Option, setOption] = useState(""); // State to track the selected option
+  const [selectOption, setSelectOption] = useState("");
+
+  // State to track the selected option
+
+  const handleRadioChange = (event) => {
+    setSelectedOption(event.target.value); // Update the selected option
+  };
+
+  const RadioChange = (event) => {
+    setOption(event.target.value); // Update the selected option
+  };
+
+  const RadioChanges = (event) => {
+    setSelectOption(event.target.value); // Update the selected option
+  };
   return (
     <div className="Contactus-Section">
       <div className="flex bg-gray-100">
@@ -166,47 +183,68 @@ function Contactus() {
                 <div className="paragraph flex gap-5">
                   <h1 className="text-2xl">What can we do for you?</h1>
                   <div className="flex-1">
-                    <div className="flex mt-10 gap-3 -translate-x-66.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        UI / UX Design
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-66.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="ui-ux" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectedOption === "ui-ux"} // Check if this option is selected
+                        onChange={handleRadioChange}
+                      />{" "}
+                      {/* Add accent-black */}
+                      <h1>UI / UX Design</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Graphic Design
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="graphic" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectedOption === "graphic"} // Check if this option is selected
+                        onChange={handleRadioChange}
+                      />
+                      <h1>Graphic Design</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Branding
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="brand" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectedOption === "brand"} // Check if this option is selected
+                        onChange={handleRadioChange}
+                      />
+                      <h1>Branding</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Mobile App
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="mobile" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectedOption === "mobile"} // Check if this option is selected
+                        onChange={handleRadioChange}
+                      />
+                      <h1>Mobile App</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Website
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="web" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectedOption === "web"} // Check if this option is selected
+                        onChange={handleRadioChange}
+                      />
+                      <h1>Website</h1>
                     </div>
                   </div>
                 </div>
@@ -227,47 +265,67 @@ function Contactus() {
                 <div className="paragraph flex gap-5">
                   <h1 className="text-2xl">Budget in USD</h1>
                   <div className="flex-1">
-                    <div className="flex mt-10 gap-3 -translate-x-40.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Under $10k
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-40.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="under" // Unique value for this radio button
+                        className="accent-black"
+                        checked={Option === "under"} // Check if this option is selected
+                        onChange={RadioChange}
+                      />
+                      <h1>Under $10k</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        $10 - $20k
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="10k" // Unique value for this radio button
+                        className="accent-black"
+                        checked={Option === "10k"} // Check if this option is selected
+                        onChange={RadioChange}
+                      />
+                      <h1>$10 - $20k</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        $20 - $50k
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="20k" // Unique value for this radio button
+                        className="accent-black"
+                        checked={Option === "20k"} // Check if this option is selected
+                        onChange={RadioChange}
+                      />
+                      <h1>$20 - $50k</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        $50 - $100k
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="50k" // Unique value for this radio button
+                        className="accent-black"
+                        checked={Option === "50k"} // Check if this option is selected
+                        onChange={RadioChange}
+                      />
+                      <h1>$50 - $100k</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-90.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        $100k+
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-90.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="100k" // Unique value for this radio button
+                        className="accent-black"
+                        checked={Option === "100k"} // Check if this option is selected
+                        onChange={RadioChange}
+                      />
+                      <h1>$100k+</h1>
                     </div>
                   </div>
                 </div>
@@ -326,29 +384,41 @@ function Contactus() {
                 <div className="paragraph flex gap-5">
                   <h1 className="text-2xl">Do you have a deadline?</h1>
                   <div className="flex-1">
-                    <div className="flex mt-10 gap-3 -translate-x-63.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        Yes
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-63.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="yes" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectOption === "yes"} // Check if this option is selected
+                        onChange={RadioChanges}
+                      />
+                      <h1>Yes</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-125.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        No, I’m in no rush
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-125.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="no" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectOption === "no"} // Check if this option is selected
+                        onChange={RadioChanges}
+                      />
+                      <h1>No, I’m in no rush</h1>
                     </div>
                   </div>
 
                   <div className="flex">
-                    <div className="flex mt-10 gap-3 -translate-x-120.5">
-                      <input type="radio" />
-                      <h1 className="text-[#635D8B26] text-opacity-25 hover:text-black">
-                        No deadline, but asap please
-                      </h1>
+                    <div className="flex mt-10 gap-3 -translate-x-120.5 text-[#635D8B26] text-opacity-25 hover:text-black">
+                      <input
+                        type="radio"
+                        value="deadline" // Unique value for this radio button
+                        className="accent-black"
+                        checked={selectOption === "deadline"} // Check if this option is selected
+                        onChange={RadioChanges}
+                      />
+                      <h1>No deadline, but asap please</h1>
                     </div>
                   </div>
                 </div>
