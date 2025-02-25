@@ -41,7 +41,7 @@ function Services() {
 
           <div className="container-grid grid grid-cols-12">
             <div className="col-span-12 sm:col-span-4">
-              <div className="row-span-1">
+              <div className="row-span-1 border-l-4 border-[#8E3CF7]">
                 <img
                   className="object-cover object-center w-[93%] h-80 ml-8"
                   src={Eyeimg}

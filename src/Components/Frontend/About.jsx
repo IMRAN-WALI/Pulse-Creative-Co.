@@ -70,6 +70,7 @@ function About() {
             <hr className="w-[60%] mt-31 m-10" />
             <h1 className="paragraph flex mt-27 text-2xl">About</h1>
           </div>
+
           <div className="m-10">
             <h1 className="design-class text-8xl">
               Creative Minds for Impactful Communications
@@ -82,7 +83,7 @@ function About() {
               className="Pulse sm:col-span-6 flex bg-cover h-[59rem] w-[43vw] relative right-63 mt-[-28rem]"
               style={{
                 backgroundImage: `url(${Pulse})`,
-                zIndex:1, // Place the image behind other content
+                zIndex: 1, // Place the image behind other content
                 position: "relative" // Use absolute positioning
               }}
             ></div>

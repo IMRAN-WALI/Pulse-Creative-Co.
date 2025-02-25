@@ -68,8 +68,10 @@ function Servicespage() {
             <h1 className="paragraph flex mt-27 text-2xl">Services</h1>
           </div>
 
-          <div className="m-10">
-            <h1 className="design-class text-8xl">Services & Solutions</h1>
+          <div className="border-l-4 border-[#8E3CF7]">
+            <div className="m-10">
+              <h1 className="design-class text-8xl">Services & Solutions</h1>
+            </div>
           </div>
 
           <div className="container-grid grid grid-cols-12">
@@ -98,207 +100,217 @@ function Servicespage() {
           <div className="Lists">
             <hr className="w-[95%] m-10 border-0 h-[2px] bg-[#635D8B26] bg-opacity-15" />
 
-            <div className="container-grid justify-between grid-cols-12 flex">
-              <div className="sm:col-span-6">
-                <h1 className="design-class text-8xl m-10">UI/UX Design</h1>
+            <div className="group border-l-4 border-transparent transition-colors duration-300 hover:border-[#8E3CF7]">
+              <div className="container-grid justify-between grid-cols-12 flex">
+                <div className="sm:col-span-6">
+                  <h1 className="design-class text-8xl m-10">UI/UX Design</h1>
+                </div>
+                <div className="sm:col-span-6"></div>
+                <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
+                  01
+                </h1>
               </div>
-              <div className="sm:col-span-6"></div>
-              <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
-                01
-              </h1>
-            </div>
-            <div className="flex">
-              <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
-                UI/UX Design{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Ecommerce{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Digital Product{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Design Systems{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Prototype
-              </p>
+              <div className="flex">
+                <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
+                  UI/UX Design{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Ecommerce{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Digital Product{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Design Systems{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Prototype
+                </p>
+              </div>
             </div>
 
             <hr className="w-[95%] m-10 border-0 h-[2px] bg-[#635D8B26] bg-opacity-15" />
 
-            <div className="container-grid justify-between grid-cols-12 flex">
-              <div className="sm:col-span-6">
-                <h1 className="design-class text-8xl m-10">Graphic Design</h1>
+            <div className="group border-l-4 border-transparent transition-colors duration-300 hover:border-[#8E3CF7]">
+              <div className="container-grid justify-between grid-cols-12 flex">
+                <div className="sm:col-span-6">
+                  <h1 className="design-class text-8xl m-10">Graphic Design</h1>
+                </div>
+                <div className="sm:col-span-6"></div>
+                <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
+                  02
+                </h1>
               </div>
-              <div className="sm:col-span-6"></div>
-              <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
-                02
-              </h1>
-            </div>
-            <div className="flex">
-              <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
-                Custom Illustrations{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Packaging Design{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Business Cards & Stationery{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Advertise Banner{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Marketing Design
-              </p>
+              <div className="flex">
+                <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
+                  Custom Illustrations{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Packaging Design{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Business Cards & Stationery{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Advertise Banner{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Marketing Design
+                </p>
+              </div>
             </div>
 
             <hr className="w-[95%] m-10 border-0 h-[2px] bg-[#635D8B26] bg-opacity-15" />
 
-            <div className="container-grid justify-between grid-cols-12 flex">
-              <div className="sm:col-span-6">
-                <h1 className="design-class text-8xl m-10">Branding</h1>
+            <div className="group border-l-4 border-transparent transition-colors duration-300 hover:border-[#8E3CF7]">
+              <div className="container-grid justify-between grid-cols-12 flex">
+                <div className="sm:col-span-6">
+                  <h1 className="design-class text-8xl m-10">Branding</h1>
+                </div>
+                <div className="sm:col-span-6"></div>
+                <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
+                  03
+                </h1>
               </div>
-              <div className="sm:col-span-6"></div>
-              <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
-                03
-              </h1>
-            </div>
-            <div className="flex">
-              <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
-                Logo Design{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Brand Guideline{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Visual Identity{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Rebranding{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Brand Strategy
-              </p>
+              <div className="flex">
+                <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
+                  Logo Design{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Brand Guideline{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Visual Identity{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Rebranding{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Brand Strategy
+                </p>
+              </div>
             </div>
 
             <hr className="w-[95%] m-10 border-0 h-[2px] bg-[#635D8B26] bg-opacity-15" />
 
-            <div className="container-grid justify-between grid-cols-12 flex">
-              <div className="sm:col-span-6">
-                <h1 className="design-class text-8xl m-10">Mobile App</h1>
+            <div className="group border-l-4 border-transparent transition-colors duration-300 hover:border-[#8E3CF7]">
+              <div className="container-grid justify-between grid-cols-12 flex">
+                <div className="sm:col-span-6">
+                  <h1 className="design-class text-8xl m-10">Mobile App</h1>
+                </div>
+                <div className="sm:col-span-6"></div>
+                <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
+                  04
+                </h1>
               </div>
-              <div className="sm:col-span-6"></div>
-              <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
-                04
-              </h1>
-            </div>
-            <div className="flex">
-              <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
-                iOS{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Android{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Hybrid App{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Design and Prototyping{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                App Maintenance and Support
-              </p>
+              <div className="flex">
+                <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
+                  iOS{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Android{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Hybrid App{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Design and Prototyping{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  App Maintenance and Support
+                </p>
+              </div>
             </div>
 
             <hr className="w-[95%] m-10 border-0 h-[2px] bg-[#635D8B26] bg-opacity-15" />
 
-            <div className="container-grid justify-between grid-cols-12 flex">
-              <div className="sm:col-span-6">
-                <h1 className="design-class text-8xl m-10">Website</h1>
+            <div className="group border-l-4 border-transparent transition-colors duration-300 hover:border-[#8E3CF7]">
+              <div className="container-grid justify-between grid-cols-12 flex">
+                <div className="sm:col-span-6">
+                  <h1 className="design-class text-8xl m-10">Website</h1>
+                </div>
+                <div className="sm:col-span-6"></div>
+                <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
+                  05
+                </h1>
               </div>
-              <div className="sm:col-span-6"></div>
-              <h1 className="design-class text-8xl m-10 text-[#00000040] text-opacity-25">
-                05
-              </h1>
-            </div>
-            <div className="flex mb-10">
-              <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
-                Responsive{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                E-commerce{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Custom Web Applications{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                CMS{" "}
-                <span className="m-1 ml-5">
-                  <img src={Star} />
-                </span>
-              </p>
-              <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
-                Website Optimization
-              </p>
+              <div className="flex mb-10">
+                <p className="paragraph flex m-10 text-[#00000040] text-opacity-25">
+                  Responsive{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  E-commerce{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Custom Web Applications{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  CMS{" "}
+                  <span className="m-1 ml-5">
+                    <img src={Star} />
+                  </span>
+                </p>
+                <p className="paragraph flex mt-10 mr-5 text-[#00000040] text-opacity-25">
+                  Website Optimization
+                </p>
+              </div>
             </div>
           </div>
         </div>

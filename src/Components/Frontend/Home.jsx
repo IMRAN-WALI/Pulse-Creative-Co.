@@ -23,7 +23,7 @@ function Home() {
     let path = "/contactus";
     navigate(path);
   };
-  
+
   return (
     <div style={{ backgroundColor: "#F0F2F4" }} className="w-full">
       <div className="flex bg-gray-100 h-screen">
@@ -70,10 +70,18 @@ function Home() {
           </div>
 
           <div className=" container">
-            <h1 className="design-class text-start text-[60px] md:text-[150px] m-10 ">Design</h1>
+            <div className="border-l-4 border-[#8E3CF7]">
+              <h1 className="design-class text-start text-[60px] md:text-[150px] m-10">
+                Design
+              </h1>
+            </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-400 md:text-[150px] sm:text-[40px] design-class ml-10">&</span>
-              <h1 className="design-class md:text-[150px] sm:text-[40px]">Technology</h1>
+              <span className="text-gray-400 md:text-[150px] sm:text-[40px] design-class ml-10">
+                &
+              </span>
+              <h1 className="design-class md:text-[150px] sm:text-[40px]">
+                Technology
+              </h1>
             </div>
           </div>
           <h1 className="text-[80px] text-center m-5 relative">

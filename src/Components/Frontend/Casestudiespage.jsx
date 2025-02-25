@@ -77,8 +77,10 @@ function Casestudiespage() {
             </div>
           </div>
 
-          <div className="flex m-10 mt-30">
-            <h1 className="design-class text-9xl">Case Studies</h1>
+          <div className="border-l-4 border-[#8E3CF7]">
+            <div className="flex m-10 mt-30">
+              <h1 className="design-class text-9xl">Case Studies</h1>
+            </div>
           </div>
 
           <div className="container-grid grid grid-cols-12">
