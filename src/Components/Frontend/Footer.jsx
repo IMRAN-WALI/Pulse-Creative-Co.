@@ -6,7 +6,7 @@ import FacebookSVG from "../../../public/SVG/Facebook.svg";
 import InstaSVG from "../../../public/SVG/Instagram.svg";
 import LinkdinSVG from "../../../public/SVG/Linkdin.svg";
 import SportsSVG from "../../../public/SVG/Sports.svg";
-import SVG from "../../../public/SVG/Unknown.svg";
+import Behance from "../../../public/SVG/behance.svg";
 import Email from "../../../public/IMAGE/Email.png";
 import Phone from "../../../public/IMAGE/Phone.png";
 import Location from "../../../public/IMAGE/Location.png";
@@ -117,7 +117,7 @@ function Footer() {
                     <img src={SportsSVG} />
                   </a>
                   <a className="text-white">
-                    <img src={SVG} />
+                    <img src={Behance} />
                   </a>
                 </div>
                 <div className="flex list-none mt-10 gap-5">
