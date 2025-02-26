@@ -24,6 +24,11 @@ function Home() {
     navigate(path);
   };
 
+  // Function to navigate to the About page
+  const goToAboutPage = () => {
+    navigate("/about");
+  };
+
   return (
     <div style={{ backgroundColor: "#F0F2F4" }} className="w-full">
       <div className="flex bg-gray-100 h-screen">
@@ -76,7 +81,7 @@ function Home() {
               </h1>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-400 md:text-[150px] sm:text-[40px] design-class ml-10">
+              <span className="text-[#00000040] text-opacity-20 md:text-[150px] sm:text-[40px] design-class ml-10">
                 &
               </span>
               <h1 className="design-class md:text-[150px] sm:text-[40px]">
@@ -99,15 +104,19 @@ function Home() {
         className="container-grid bg-cover w-[100%] h-[100vh] "
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className="flex flex-col justify-end items-end w-[100%]">
+        <div className="flex flex-col justify-end items-end w-[100%] leading-20">
           <p className="paragraph text-start justify-center text-white text-[65px] mt-10 p-20 w-[50%]">
             Welcome to Pulse Creative Co, where innovation meets imagination in
             the realms of design and technology.
           </p>
 
           <div className="flex justify-end w-full">
-            <button className="paragraph bg-white rounded-full border-white h-25 w-25 text-[25px] mr-50 leading-7">
-              view More
+            <button
+              className="paragraph bg-white rounded-full border-white h-25 w-25 text-[20px] mr-50 leading-7 capitalize"
+              onClick={goToAboutPage}
+            >
+              view <br />
+              More
             </button>
           </div>
         </div>

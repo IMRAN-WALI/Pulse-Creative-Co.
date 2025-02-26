@@ -71,16 +71,18 @@ function About() {
             <h1 className="paragraph flex mt-27 text-2xl">About</h1>
           </div>
 
-          <div className="m-10">
-            <h1 className="design-class text-8xl">
-              Creative Minds for Impactful Communications
-            </h1>
-            <img className="mt-10 relative z-2" src={img} />
+          <div className="border-l-4 border-[#8E3CF7] h-25">
+            <div className="m-10">
+              <h1 className="design-class text-8xl">
+                Creative Minds for Impactful Communications
+              </h1>
+              <img className="mt-15 relative z-2" src={img} />
+            </div>
           </div>
 
           <div className="container-grid grid grid-cols-12">
             <div
-              className="Pulse sm:col-span-6 flex bg-cover h-[59rem] w-[43vw] relative right-63 mt-[-28rem]"
+              className="Pulse sm:col-span-6 flex bg-cover h-[59rem] w-[43vw] relative right-63 mt-[20rem]"
               style={{
                 backgroundImage: `url(${Pulse})`,
                 zIndex: 1, // Place the image behind other content
@@ -88,7 +90,7 @@ function About() {
               }}
             ></div>
             <div className="sm:col-span-6">
-              <div className="flex justify-end text-3xl text-end w-[70%] ml-52">
+              <div className="flex justify-end text-3xl text-end w-[70%] ml-52 mt-[50rem]">
                 <p className="paragraph">
                   we believe in the magic of creativity and the power of
                   technology. We are a dynamic design agency and development

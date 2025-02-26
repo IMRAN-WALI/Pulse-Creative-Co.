@@ -136,7 +136,7 @@ function Contactus() {
 
           <hr className="w-[95%] border-0 h-[2px] bg-[#635D8B26] bg-opacity-15 mt-5 ml-18" />
 
-          <div className="container-grid grid grid-cols-12 mt-5">
+          <div className="container-grid grid grid-cols-12 mt-5 h-30">
             <div className="sm:col-span-5"></div>
             <div className="sm:col-span-7 grid grid-cols-7">
               <div className="col-span-1">
@@ -154,7 +154,7 @@ function Contactus() {
             </div>
           </div>
 
-          <div className="container-grid grid grid-cols-12 mt-5">
+          <div className="container-grid grid grid-cols-12 mt-5 h-30">
             <div className="sm:col-span-5"></div>
             <div className="sm:col-span-7 grid grid-cols-7">
               <div className="col-span-1">
@@ -172,7 +172,7 @@ function Contactus() {
             </div>
           </div>
 
-          <div className="container-grid grid grid-cols-12 mt-5">
+          <div className="container-grid grid grid-cols-12 mt-5 h-30">
             <div className="sm:col-span-5"></div>
             <div className="sm:col-span-7 grid grid-cols-7">
               <div className="col-span-1">
@@ -353,7 +353,7 @@ function Contactus() {
             </div>
           </div>
 
-          <div className="container-grid grid grid-cols-12">
+          <div className="container-grid grid grid-cols-12 mt-[-50px] h-30">
             <div className="sm:col-span-5"></div>
             <div className="sm:col-span-7 grid grid-cols-7">
               <div className="col-span-1">
@@ -377,7 +377,7 @@ function Contactus() {
             </div>
           </div>
 
-          <div className="container-grid grid grid-cols-12 mt-5">
+          <div className="container-grid grid grid-cols-12 mt-5 h-30">
             <div className="sm:col-span-5"></div>
             <div className="sm:col-span-7 grid grid-cols-7">
               <div className="col-span-1">

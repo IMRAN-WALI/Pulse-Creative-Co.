@@ -25,7 +25,7 @@ function Services() {
           </nav>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 mt-25">
           <div className="container-grid flex justify-between m-10 p-10">
             <div className="sm:cols-span-6">
               <p className="paragraph text-3xl w-[80%] text-start justify-center">
@@ -50,16 +50,22 @@ function Services() {
               </div>
 
               <div className="w-[93%] h-75 mt-2 flex justify-center items-center bg-[#ECE8F4] ml-8 row-span-1">
-                <h1 className="uppercase text-2xl">Graphic Design</h1>
+                <h1 className="paragraph text-[#00000040] text-opacity-30 uppercase text-5xl">
+                  Graphic Design
+                </h1>
               </div>
 
               <div className="w-[94%] h-75 flex justify-center items-center bg-[#ECE8F4] ml-7 relative mt-2 row-span-1">
-                <h1 className="uppercase text-2xl">Web & App Development</h1>
+                <h1 className="paragraph text-[#00000040] text-opacity-30 uppercase text-5xl text-center">
+                  Web & App Development
+                </h1>
               </div>
             </div>
             <div className="col-span-12 sm:col-span-4">
               <div className="w-[30vw] h-55 mt-10 flex justify-center items-center bg-[#ECE8F4]">
-                <h1 className="uppercase text-2xl">Ui / Ux Design</h1>
+                <h1 className="paragraph text-[#00000040] text-opacity-30 uppercase text-5xl">
+                  Ui / Ux Design
+                </h1>
               </div>
 
               <div className="row-span-2 w-[30vw]">
@@ -72,7 +78,9 @@ function Services() {
             </div>
             <div className="col-span-12 sm:col-span-4 w-full">
               <div className="w-[89%] h-75 mt-20 flex justify-center items-center bg-[#ECE8F4] mx-auto">
-                <h1 className="uppercase text-2xl">Branding</h1>
+                <h1 className="paragraph text-[#00000040] text-opacity-30 uppercase text-5xl">
+                  Branding
+                </h1>
               </div>
 
               <div className="row-span-1 mt-2">
