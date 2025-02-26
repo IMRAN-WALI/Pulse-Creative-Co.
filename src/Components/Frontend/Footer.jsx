@@ -13,6 +13,7 @@ import Location from "../../../public/IMAGE/Location.png";
 import PulseIcon from "../../../public/IMAGE/pulse.png";
 import { useState, useEffect } from "react";
 import { FaAnglesUp } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import Ellipse from "../../../public/IMAGE/Ellipse 5.png";
 
 function Footer() {
@@ -48,29 +49,32 @@ function Footer() {
         <footer>
           <div className="w-full md:py-8">
             <div className="sm:flex sm:items-center sm:justify-around">
-              <a>
-                <img src={PulseIcon} className="h-15 w-15 mr-[70rem]" />
-              </a>
+              <img
+                src={PulseIcon}
+                className="h-15 w-15 mr-[70rem]"
+                alt="Pulse Icon"
+              />
+
               <ul className="design-class flex flex-wrap items-center text-lg text-white sm:mb-0 dark:text-gray-400 gap-10">
                 <li>
-                  <a href="/" className="hover:underline me-4 md:me-6">
+                  <Link to="/" className="hover:underline me-4 md:me-6">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className="hover:underline me-4 md:me-6">
+                  <Link to="/about" className="hover:underline me-4 md:me-6">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services" className="hover:underline me-4 md:me-6">
+                  <Link to="/services" className="hover:underline me-4 md:me-6">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/casestudies" className="hover:underline">
+                  <Link to="/casestudies" className="hover:underline">
                     Case Studies
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

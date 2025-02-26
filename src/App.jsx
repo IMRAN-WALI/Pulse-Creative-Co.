@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Home from "./Components/Frontend/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Frontend/Home";
 import About from "./Components/Frontend/About";
 import Servicespage from "./Components/Frontend/Servicespage";
 import Casestudiespage from "./Components/Frontend/Casestudiespage";
