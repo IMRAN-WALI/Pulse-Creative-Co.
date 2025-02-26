@@ -82,7 +82,7 @@ function Home() {
               </h1>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-[#00000040] text-opacity-20 md:text-[150px] sm:text-[40px] design-class ml-10">
+              <span className="design-class text-[#00000040] text-opacity-20 md:text-[150px] sm:text-[40px] ml-10">
                 &
               </span>
               <h1 className="design-class md:text-[150px] sm:text-[40px]">
