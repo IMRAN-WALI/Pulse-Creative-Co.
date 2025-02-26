@@ -6,6 +6,7 @@ import Ellipse from "../../../public/IMAGE/Ellipse 1.png";
 import Stats from "../Frontend/Stats";
 import Footer from "../Frontend/Footer";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "HOME", href: "/", current: false },
@@ -43,14 +44,14 @@ function Casestudiespage() {
             <ul className="space-y-2">
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className={`flex items-center px-6 py-2 ${
-                      item.current ? "text-#0000004D" : "text-gray-400"
+                      item.current ? "text-black" : "text-gray-400"
                     } hover:text-black`}
                   >
                     <span className="ml-2">{item.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
