@@ -171,6 +171,7 @@ function Footer() {
             </div>
           </div>
         </footer>
+
         <div className="grid grid-cols-12">
           <div className="col-span-10 sm:grid-cols-10">
             <h1 className="design-class text-gray-500 text-[11rem] ml-10">

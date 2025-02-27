@@ -12,6 +12,7 @@ import SVG from "../../../public/SVG/Arrow.svg";
 import Stats from "../Frontend/Stats";
 import Footer from "../Frontend/Footer";
 import Calender from "../../../public/SVG/calendar.svg";
+import { Link } from "react-router-dom";
 
 const navigation = [
   {
@@ -43,14 +44,18 @@ function Contactus() {
   const RadioChanges = (event) => {
     setSelectOption(event.target.value); // Update the selected option
   };
+
   return (
     <div className="Contactus-Section">
       <div className="flex bg-gray-100">
         <div className="flex-1">
           <div className="container-grid flex justify-between p-5">
             <div className="sm:col-span-6">
-              <img src={Logo} alt="Logo" className="h-10" />
+              <Link to="/">
+                <img src={Logo} alt="Logo" className="h-10 cursor-pointer" />
+              </Link>
             </div>
+
             <div className="sm:col-span-6">
               <div
                 className="absolute text-white text-lg paragraph flex bg-cover bg-center right-0 w-43 h-30 bottom-[50rem]"
@@ -88,6 +93,7 @@ function Contactus() {
                       <li key={item.name}>
                         <a
                           href={item.href}
+                          target="_blank"
                           className={`flex items-center px-6 py-2 ${
                             item.current ? "text-#0000004D" : "text-gray-400"
                           } hover:text-black`}

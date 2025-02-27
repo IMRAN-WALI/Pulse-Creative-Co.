@@ -113,7 +113,7 @@ function Home() {
 
           <div className="flex justify-end w-full">
             <button
-              className="paragraph bg-white rounded-full border-white h-25 w-25 text-[20px] mr-50 leading-7 capitalize"
+              className="paragraph bg-white rounded-full border-white h-25 w-25 text-[20px] mr-50 leading-7 capitalize hover:bg-gray-200 hover:text-white"
               onClick={goToAboutPage}
             >
               view <br />

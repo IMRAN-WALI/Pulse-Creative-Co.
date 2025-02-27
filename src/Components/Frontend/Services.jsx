@@ -91,7 +91,7 @@ function Services() {
                 />
                 <div className="cont text-end relative bottom-40 mr-25">
                   <button
-                    className="paragraph bg-[#F0F2F4] rounded-full border-white h-25 w-25 text-[25px]  capitalize leading-5"
+                    className="paragraph bg-[#F0F2F4] rounded-full border-white h-25 w-25 text-[25px]  capitalize leading-5 hover:bg-gray-200 hover:text-white"
                     onClick={view}
                   >
                     view More
